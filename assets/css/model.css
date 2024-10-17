@@ -1,0 +1,245 @@
+/* MODEL HOUSE */
+.model-house .o-mv {
+    background-image: url(../img/model-house/model-house-mv.jpg);
+  }
+  
+  .model-house .o-mv-content::after {
+    content: none;
+  }
+  
+  .model-house-wrapper {
+    padding-top: 106px;
+    max-width: 1131px;
+    margin: 0 auto;
+    padding-inline: 15px;
+  }
+  
+  @media (max-width: 767px) {
+    .model-house-wrapper {
+      padding: 70.6px 20px 0;
+    }
+  }
+  
+  .model-house-head {
+    text-align: center;
+  }
+  
+  .model-house-title {
+    font-size: 28px;
+    line-height: 37px;
+    font-weight: 700;
+    color: #13966e;
+    border: 1px solid #13966e;
+    border-radius: 5px;
+    padding: 2px 24px 2px 13px;
+    display: inline-block;
+  }
+  
+  @media (max-width: 767px) {
+    .model-house-title {
+      padding: 2px 0 13px 0px;
+    }
+  }
+  
+  .model-house-top-text {
+    font-size: 16px;
+    line-height: 26.6px;
+    color: #434343;
+    letter-spacing: 0.12em;
+    font-weight: 500;
+    margin-top: 32px;
+  }
+  
+  @media (max-width: 767px) {
+    .model-house-top-text {
+      margin-top: 41px;
+    }
+  }
+  
+  .model-house-row img {
+    width: 100%;
+  }
+  
+  .model-house-row {
+    display: flex;
+    gap: 32.9px;
+    margin-top: 27px;
+  }
+  
+  @media (max-width: 767px) {
+    .model-house-row {
+      margin-top: 63.9px;
+      gap: 12.8px;
+      flex-direction: column;
+    }
+  }
+  
+  .model-house-first-img {
+    max-width: 802.13px;
+  }
+  
+  .model-house-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 266px;
+  }
+  
+  @media (max-width: 767px) {
+    .model-house-inner {
+      gap: 13px;
+      max-width: 100%;
+    }
+  }
+  
+  .model-house-map-img {
+    margin-top: 37px;
+  }
+  
+  @media (max-width: 767px) {
+    .model-house-map-img {
+      margin-top: 10px;
+    }
+  }
+  
+  .model-house-map-img img {
+    width: 100%;
+  }
+  
+  .model-house-info-block {
+    margin-top: 126.1px;
+  }
+  
+  @media (max-width: 767px) {
+    .model-house-info-block {
+      margin-top: 35px;
+    }
+  }
+  
+  .model-house-info-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 45px;
+  }
+  
+  @media (max-width: 767px) {
+    .model-house-info-row {
+      gap: 20.5px;
+      flex-direction: column;
+    }
+  }
+  
+  .model-house-info-row:not(:last-of-type) {
+    margin-bottom: 135px;
+  }
+  
+  @media (max-width: 767px) {
+    .model-house-info-row:not(:last-of-type) {
+      margin-bottom: 35px;
+    }
+  }
+  
+  .model-house-info-row.rev {
+    flex-direction: row-reverse;
+  }
+  
+  @media (max-width: 767px) {
+    .model-house-info-row.rev {
+      flex-direction: column;
+    }
+  }
+  
+  .model-house-info-content {
+    max-width: 511px;
+  }
+  
+  @media (max-width: 991px) {
+    .model-house-info-content {
+      max-width: 345px;
+      width: 100%;
+      flex-shrink: 0;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .model-house-info-content {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  .model-house-info-img img {
+    width: 100%;
+  }
+  
+  .model-house-info-head {
+    font-size: 28px;
+    letter-spacing: 0.12em;
+    color: #13966e;
+    line-height: 37px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(#22a369, #096cb4) 30;
+    font-weight: 700;
+  }
+  
+  .model-house-info-text {
+    margin-top: 25px;
+    letter-spacing: 0.12em;
+    font-weight: 500;
+    font-size: 16px;
+    color: #434343;
+    line-height: 25.6666666667px;
+  }
+  
+  @media (max-width: 767px) {
+    .model-house-info-text {
+      line-height: 26.25px;
+    }
+  }
+  
+  .model-house-info-img {
+    max-width: 549px;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 991px) {
+    .model-house-info-img {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .model-house-info-img {
+      max-width: 100%;
+    }
+  }
+  
+  .model-house-btm-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 137px;
+  }
+  
+  @media (max-width: 767px) {
+    .model-house-btm-row {
+      margin-top: 40px;
+      gap: 12px;
+    }
+  }
+  
+  .model-house-btm-img {
+    width: calc((100% / 2) - (20px / 2));
+  }
+  
+  @media (max-width: 767px) {
+    .model-house-btm-img {
+      width: 100%;
+    }
+  }
+  
+  .model-house-btm-img img {
+    width: 100%;
+  }
+  
+  /* MODEL HOUSE */

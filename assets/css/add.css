@@ -1,0 +1,367 @@
+@charset "UTF-8";
+
+.life__block,
+.adventure {
+    position: relative;
+}
+
+.life__block::after,
+.adventure::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 90px;
+    height: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: url("../img/image_photo.svg") center center no-repeat;
+}
+
+.o-mv-content {
+    position: relative;
+}
+
+.o-mv-content::after {
+    content: "※東街区（完売済）のイメージ写真です。";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 24px;
+    right: 20px;
+    bottom: 20px;
+    color: #fff;
+    font-size: 16px;
+    text-align: right;
+    font-weight: 400;
+    font-family: 'Noto Sans JP', sans-serif;
+    /*+background: url("../img/detail/txt.svg") center center no-repeat;*/
+}
+
+@media (max-width: 767px) {
+    body {
+        padding-bottom: 20px;
+    }
+
+    .life__block::after,
+    .adventure::after {
+        right: 10px;
+        bottom: 10px;
+        background: url("../img/image_photo.svg") center center no-repeat;
+        background-size: 71px;
+    }
+
+    .o-mv-content::after {
+        content: "※東街区（完売済）のイメージ写真です。";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 17px;
+        right: 5px;
+        bottom: 10px;
+        font-size: 12px;
+        /*background: url("../img/detail/txt.svg") center center no-repeat;
+	background-size: contain;*/
+    }
+
+    .conditions-block-img-btm {
+        max-width: 220px;
+    }
+
+    .plan .plot-block {
+        overflow: hidden;
+    }
+
+    .building-card img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .header-block-open {
+
+        padding: 20.4px 34.5px 40px 35.5px;
+    }
+}
+
+.conditions-card:first-child {
+    max-width: 426px;
+}
+
+@media (min-width: 768px) {
+
+    .conditions-card:first-child .conditions-card--img {
+        margin: 9.4px 0 14.6px -1px;
+    }
+}
+
+.menu-txt {
+    white-space: nowrap;
+}
+
+/*追従*/
+
+.float-contact-flex {
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 2;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+}
+
+.float-contact-flex.show {
+    opacity: 1;
+}
+
+.float-contact {
+    position: relative;
+    width: 80px;
+    height: 262px;
+    display: inline-block;
+    border-radius: 10px 0 0 10px;
+    writing-mode: vertical-rl;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+    align-content: center;
+    color: #fff;
+    font-weight: 500;
+    font-family: "Noto Sans JP", sans-serif;
+    border: none;
+    font-size: 20px;
+    box-shadow: inset 0 0 0 2px transparent;
+    transition: box-shadow 0.3s ease, color 0.3s ease;
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, .16));
+}
+
+.float-contact::before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    transition: opacity 0.3s ease;
+    inset: 0;
+    background: linear-gradient(to bottom, #FF9700, #F75903);
+    border-radius: 8px 0 0 8px;
+}
+
+.float-contact:hover {
+    box-shadow: inset 0 0 0 2px #F75903;
+    color: #F75903;
+}
+
+.float-contact::after {
+    position: absolute;
+    transition: all 0.3s ease;
+    content: "";
+    width: 37px;
+    height: 28px;
+    background: url(../img/common/float-contact-con.svg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 35px;
+    bottom: auto;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.float-contact:hover::after {
+    background: url(../img/common/float-contact-con-h.svg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.float-contact.-green {
+    width: 80px;
+    height: 213px;
+    box-shadow: inset 0 0 0 2px transparent;
+    transition: box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.float-contact.-green::before {
+    background: linear-gradient(to bottom, #22A369, #096CB4);
+}
+
+.float-contact.-green:hover {
+    box-shadow: inset 0 0 0 2px #096CB4;
+    color: #096CB4;
+    background: #FFF;
+}
+
+.float-contact.-green::after {
+    width: 39px;
+    height: 38px;
+    background: url(../img/common/float-contact-res.svg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 23px;
+}
+
+.float-contact.-green:hover::after {
+    background: url(../img/common/float-contact-res-h.svg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.float-contact:hover::before {
+    background: #fff;
+    transition: opacity 0.3s ease;
+}
+
+@media (max-width: 767px) {
+    .float-contact-flex {
+        right: 0;
+        left: 0;
+        bottom: 0;
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .float-contact {
+        writing-mode: unset;
+        width: 63.6%;
+        height: 51px;
+        display: block;
+        border: none;
+        height: auto;
+        padding: 6px 0;
+        border-radius: 0 10px 0 0;
+        font-size: 16px;
+        letter-spacing: -.05em;
+        padding-left: 90px;
+        /*min-width: 248px;*/
+        box-shadow: inset 0 0 0 1px transparent;
+        transition: box-shadow 0.3s ease, color 0.3s ease;
+
+        span {
+            display: inline-block;
+            text-align: center;
+        }
+    }
+
+    .float-contact span {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .float-contact:hover {
+        box-shadow: inset 0 0 0 1px #F75903;
+    }
+
+    .float-contact.-green {
+        width: 36.5%;
+        height: 51px;
+        padding-left: 52px;
+        min-width: 142px;
+        box-shadow: inset 0 0 0 1px transparent;
+    }
+
+    .float-contact.-green:hover {
+        box-shadow: inset 0 0 0 1px #096CB4;
+    }
+
+    /* .float-contact img {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.16);
+    } */
+
+    .float-contact::after {
+        width: 26px;
+        height: 20px;
+        top: 14.6px;
+        left: 20%;
+        margin: 0;
+    }
+
+    .float-contact.-green::after {
+        width: 28px;
+        height: 27px;
+        top: 12.9px;
+        left: 9.8%;
+    }
+
+    .float-contact::before {
+        border-radius: 0 10px 0 0;
+    }
+
+    .float-contact.-green {
+        border-radius: 10px 0 0 0;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    .float-contact.-green::before {
+        border-radius: 10px 0 0 0;
+    }
+
+    .float-contact:hover {
+        border-width: 1px;
+    }
+
+    .float-contact.-green:hover {
+        border-width: 1px;
+    }
+}
+
+
+@media (min-width:500px) and (max-width: 767px) {
+    .float-contact {
+        padding-left: 150px;
+    }
+
+    .float-contact.-green {
+        padding-left: 100px;
+    }
+}
+
+.building-modal-wpr {
+    overflow: unset;
+}
+
+.mdl03 .building-modal-wpr-img:nth-child(1) {
+    width: 50%;
+}
+
+.mdl03 .building-modal-wpr-img:nth-child(2) {
+    max-width: 350px;
+    width: 41%;
+    padding-top: 29px;
+}
+
+.mdl02 .building-modal-wpr-img:nth-child(1) {
+    width: 76%;
+    max-width: 486px;
+}
+
+.mdl02 .building-modal-wpr-img:nth-child(2) {
+    max-width: 116px;
+    width: 19%;
+    padding-inline: 0;
+}
+
+
+footer.detail .btn {
+    margin-block: 80px;
+    max-height: 62px;
+    padding-inline: auto;
+    margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+    footer.detail .btn {
+        margin-block: 100px;
+        max-height: 100%;
+    }
+}
+
+/*scroll*/
+#plan {
+    padding-top: 100px;
+    margin-top: -100px;
+}

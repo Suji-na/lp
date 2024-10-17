@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="488" height="77.5" viewBox="0 0 488 77.5">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff9700"/>
+      <stop offset="1" stop-color="#f75903"/>
+    </linearGradient>
+  </defs>
+  <path id="長方形_3047" data-name="長方形 3047" d="M10,2a8.009,8.009,0,0,0-8,8V67.5a8.009,8.009,0,0,0,8,8H478a8.009,8.009,0,0,0,8-8V10a8.009,8.009,0,0,0-8-8H10m0-2H478a10,10,0,0,1,10,10V67.5a10,10,0,0,1-10,10H10a10,10,0,0,1-10-10V10A10,10,0,0,1,10,0Z" fill="url(#linear-gradient)"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg id="button03" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="488" height="77.5" viewBox="0 0 488 77.5">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#22a369"/>
+      <stop offset="1" stop-color="#096cb4"/>
+    </linearGradient>
+  </defs>
+  <rect id="Rectangle_3047" data-name="Rectangle 3047" width="488" height="77.5" rx="10" fill="#fff"/>
+  <path id="長方形_3047_-_アウトライン" data-name="長方形 3047 - アウトライン" d="M10,2a8.009,8.009,0,0,0-8,8V67.5a8.009,8.009,0,0,0,8,8H478a8.009,8.009,0,0,0,8-8V10a8.009,8.009,0,0,0-8-8H10m0-2H478a10,10,0,0,1,10,10V67.5a10,10,0,0,1-10,10H10a10,10,0,0,1-10-10V10A10,10,0,0,1,10,0Z" fill="url(#linear-gradient)"/>
+</svg>
